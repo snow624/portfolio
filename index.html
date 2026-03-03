@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yuki Kawakami Portfolio</title>
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile.css" media="(max-width:768px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- ハンバーガー -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+
+    <!-- ファビコン -->
+    <link rel="icon" href="/img/favicon.ico" sizes="any" />
+
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Kiwi+Maru:wght@400;500&family=M+PLUS+Rounded+1c:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- js -->
+    <script src="./assets/js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header id="header" class="header">
+        <!-- ヘッダー挿入 -->
+    </header>
+
+    <main>
+        <section class="home" id="home">
+
+
+            <section class="mv container">
+
+                <div class="mv-select__top">
+                    <div>
+                        <p class="mv-select__kicker">CHARACTER SELECT</p>
+                        <h1 class="mv-select__hero">Portfolio
+                            <img src="./img/icon.png">
+                        </h1>
+                        <p class="mv-select__by">by Yuki Kawakami</p>
+                    </div>
+                </div>
+
+                <div class="mv mv-select">
+                    <div class="mv-select__frame">
+
+                        <div class="mv-select__grid">
+                            <!-- 左：キャラ -->
+                            <div class="mv-select__character">
+                                <div class="mv-select__portrait">
+                                    <img id="mvPortrait" src="./img/me.png" alt="character">
+                                </div>
+                                <div class="mv-select__name" id="mvName">Yuki Kawakami</div>
+                                <div class="mv-select__role" id="mvRole">Web Design / Frontend / Laravel</div>
+                            </div>
+
+                            <!-- 右：ステータス -->
+                            <div class="mv-select__status">
+                                <div class="mv-select__card">
+                                    <div class="mv-select__cardTitle">STATUS</div>
+
+                                    <dl class="mv-select__dl">
+                                        <div class="mv-select__row">
+                                            <dt>Type</dt>
+                                            <dd id="mvType">Creator</dd>
+                                        </div>
+                                        <div class="mv-select__row">
+                                            <dt>Skill</dt>
+                                            <dd id="mvSkill">HTML / CSS / JS</dd>
+                                        </div>
+                                        <div class="mv-select__row">
+                                            <dt>Special</dt>
+                                            <dd id="mvSpecial">Design → Coding</dd>
+                                        </div>
+                                    </dl>
+
+                                    <div class="mv-select__bars">
+                                        <div class="mv-select__bar"><span>Design</span><i id="barDesign"></i></div>
+                                        <div class="mv-select__bar"><span>Frontend</span><i id="barFront"></i></div>
+                                        <div class="mv-select__bar"><span>Backend</span><i id="barBack"></i></div>
+                                    </div>
+
+                                    <div class="mv-select__cta">
+                                        <a class="mv-btn mv-btn--main" href="#works">START (Works)</a>
+                                        <a class="mv-btn mv-btn--sub" href="#contact">CONTACT</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 下：キャラサムネ一覧 -->
+                        <div class="mv-select__thumbs">
+                            <button class="mv-arrow" type="button" data-dir="-1" aria-label="prev">‹</button>
+
+                            <div class="mv-select__thumbList" id="mvThumbList">
+                                <!-- JSで生成 -->
+                            </div>
+
+                            <button class="mv-arrow" type="button" data-dir="1" aria-label="next">›</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                </div>
+
+            </section>
+
+
+
+        </section>
+
+        <section class="aboutMe" id="aboutMe">
+            <div class="title box slideBottom">
+                <h2>ABOUT ME</h2>
+                <h6>わたしについて</h6>
+            </div>
+
+            <div class="aboutBox">
+                <img src="img/me.png">
+
+                <div class="homeText">
+                    <h1>Webデザイナー / フロントエンド / Laravel</h1>
+                    <p class="aboutText">
+                        札幌市出身。専門学校では診療放射線学科で学んだのち放射線技師として救急病院で治療・検査業務に従事。Webデザインに興味を持ったことをきっかけにITエンジニアを志し、26歳でIT業界に参画。Webサイト作成、DTP作成からスタートし、Webアプリケーションのデザインからコーディング、バックエンド開発まで経験してきました。
+                    </p>
+                    <p class="homeLead">
+                        デザインからコーディング、JavaScriptでWebサイトに動きをつけることができます。
+                    </p>
+
+                    <div class="homeCtas">
+                        <a class="btn" href="#works">制作実績を見る</a>
+                        <a class="btn btnSub" href="https://github.com/snow624" target="_blank"
+                            rel="noopener">GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="skill" id="skill">
+            <div class="title  box slideBottom">
+                <h2>SKILL</h2>
+                <h6>できること</h6>
+            </div>
+
+            <div class="skillBox container">
+
+                <div class="skillCard">
+                    <!-- フロントエンド -->
+                    <h3>フロントエンド</h3>
+
+                    <div class="skillHead">
+                        <img class="skillIcon" src="img/front.png" alt="">
+                        <p class="skillLead">UI制作 / アニメーション / レスポンシブ</p>
+                    </div>
+
+                    <dl class="skillBars">
+                        <div class="skillRow">
+                            <dt>HTML</dt>
+                            <dd><span class="bar" style="--v: 85%"></span></dd>
+                        </div>
+
+                        <div class="skillRow">
+                            <dt>CSS</dt>
+                            <dd><span class="bar" style="--v: 85%"></span></dd>
+                        </div>
+
+                        <div class="skillRow">
+                            <dt>JavaScript</dt>
+                            <dd><span class="bar" style="--v: 55%"></span></dd>
+                        </div>
+                    </dl>
+
+                    <p class="skillNote">制作物：ポートフォリオ / UI実装 / DOM操作</p>
+                </div>
+
+
+                <!-- バックエンド -->
+                <div class="skillCard">
+                    <h3>バックエンド</h3>
+
+                    <div class="skillHead">
+                        <img class="skillIcon" src="img/back.png" alt="">
+                        <p class="skillLead">Laravel / CRUD / DB設計</p>
+                    </div>
+
+                    <dl class="skillBars">
+                        <div class="skillRow">
+                            <dt>PHP</dt>
+                            <dd><span class="bar" style="--v: 45%"></span></dd>
+                        </div>
+                        <div class="skillRow">
+                            <dt>Laravel</dt>
+                            <dd><span class="bar" style="--v: 55%"></span></dd>
+                        </div>
+                        <div class="skillRow">
+                            <dt>MySQL</dt>
+                            <dd><span class="bar" style="--v: 45%"></span></dd>
+                        </div>
+                    </dl>
+
+                    <p class="skillNote">商品管理/検索/ページネーションなどの実装経験</p>
+                </div>
+
+                <!-- デザイン -->
+                <div class="skillCard">
+                    <h3>デザイン</h3>
+
+                    <div class="skillHead">
+                        <img class="skillIcon" src="img/design.png" alt="">
+                        <p class="skillLead">設計 / ビジュアル / DTP</p>
+                    </div>
+
+                    <dl class="skillBars">
+                        <div class="skillRow">
+                            <dt>Illustrator</dt>
+                            <dd><span class="bar" style="--v: 85%"></span></dd>
+                        </div>
+                        <div class="skillRow">
+                            <dt>Photoshop</dt>
+                            <dd><span class="bar" style="--v: 70%"></span></dd>
+                        </div>
+                        <div class="skillRow">
+                            <dt>Figma</dt>
+                            <dd><span class="bar" style="--v: 55%"></span></dd>
+                        </div>
+                    </dl>
+
+                    <p class="skillNote">ロゴ/チラシ/バナー/サイトデザイン</p>
+                </div>
+
+
+            </div>
+
+            <!-- <p class="memo">
+                <span>バーは「得意度の目安」です（実務・個人開発・学習の総合）</span>
+            </p> -->
+        </section>
+
+        <section class="works" id="works">
+            <div class="title  box slideBottom">
+                <h2>WORKS</h2>
+                <h6>制作実績</h6>
+            </div>
+
+            <div class="workBox container">
+
+                <div class="workCard">
+                    <!-- laravel --> <!-- Spring Boot -->
+                    <a href="/works/laravel-vending-system.html">
+                        <img src="img/works-01.png" alt="laravel">
+                    </a>
+                    <span class="workBadge m">個人制作</span>
+                    <span class="workBadge s">Webアプリケーション開発</span>
+                </div>
+
+                <div class="workCard">
+                    <!-- ポワール治療院HP -->
+                    <a href="/works/poire-clinic.html.html">
+                        <img src="img/works-02.png" alt="ポワール治療院HP">
+                    </a>
+                    <span class="workBadge c">クライアントワーク</span>
+                    <span class="workBadge s">Webサイト制作</span>
+                </div>
+                <div class="workCard">
+                    <!-- ポートフォリオサイト -->
+                    <a href="/works/portfolio-site.html">
+                        <img src="img/works-03.png" alt="ポートフォリオサイト">
+                    </a>
+                    <span class="workBadge m">個人制作</span>
+                    <span class="workBadge s">Webサイト制作</span>
+                </div>
+                <div class="workCard">
+                    <!-- あいか名刺 -->
+                    <a href="/works/aika-dtp.html">
+                        <img src="img/works-04.png" alt="Spring Boot">
+                    </a>
+                    <span class="workBadge c">クライアントワーク</span>
+                    <span class="workBadge s">DTPデザイン</span>
+                </div>
+                <div class="workCard">
+                    <!-- キャラクターデザイン（てっくん） -->
+                    <a href="/works/cytech-character-design.html">
+                        <img src="img/works-05.png" alt="キャラクターデザイン">
+                    </a>
+                    <span class="workBadge m">個人制作</span>
+                    <span class="workBadge s">キャラクターデザイン</span>
+                </div>
+                <div class="workCard">
+                    <!-- LINEスタンプ -->
+                    <a href="/works/line-stamp-design.html">
+                        <img src="img/works-06.png " alt="LINEスタンプ">
+                    </a>
+                    <span class="workBadge m">個人制作</span>
+                    <span class="workBadge s">LINEスタンプ</span>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="contact" id="contact">
+
+            <div class="title box slideBottom">
+                <h2 class="w">CONTACT</h2>
+                <h6 class="w">お問い合わせ</h6>
+            </div>
+
+            <div class="contactPanel">
+
+                <p class="contactLead">
+                    お仕事のご依頼やご相談は、以下よりお気軽にご連絡ください。
+                </p>
+
+                <div class="contactActions">
+
+                    <a href="https://github.com/snow624" target="_blank" rel="noopener"
+                        class="contactBtn contactBtn--github">
+
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHubを見る</span>
+
+                    </a>
+
+                    <a href="mailto:snow19980624@gmail.com" class="contactBtn contactBtn--mail">
+
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>メールで連絡する</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+    <footer id="footer" class="footer">
+        <!-- フッター挿入 -->
+    </footer>
+
+</body>
+
+</html>

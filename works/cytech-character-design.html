@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>制作実績 | Yuki Kawakami Portfolio</title>
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/mobile.css" media="(max-width:768px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- ハンバーガー -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+
+    <!-- ファビコン -->
+    <link rel="icon" href="../img/favicon.ico" sizes="any" />
+
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Kiwi+Maru:wght@400;500&family=M+PLUS+Rounded+1c:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- js -->
+    <script src="../assets/js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header id="header" class="header"><!-- ヘッダー挿入 --></header>
+
+    <main>
+
+        <!-- ===== HERO ===== -->
+        <section class="workHero">
+            <div class="workHero__inner">
+
+                <nav class="workBread" aria-label="breadcrumb">
+                    <a href="../index.html#works" class="workBread__link">
+                        <i class="fa-solid fa-arrow-left"></i> WORKSへ戻る
+                    </a>
+                </nav>
+                <!-- 前後ナビ -->
+                <div class="workPager">
+                    <a class="workPager__btn" href="./aika-dtp.html">
+                        <i class="fa-solid fa-arrow-left"></i> PREV
+                    </a>
+                    <a class="workPager__btn" href="../index.html#works">
+                        <i class="fa-solid fa-table-cells-large"></i> 一覧へ
+                    </a>
+                    <a class="workPager__btn" href="./line-stamp.html">
+                        NEXT <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="workHero__grid">
+                    <!-- 左：サムネ -->
+                    <div class="workHero__shot">
+
+
+                        <!-- メイン画像 -->
+                        <img id="workHeroMain" src="../img/works-02.png" alt="作品サムネイル">
+
+                        <!-- 下：別画像サムネ -->
+                        <div class="workHeroThumbs">
+                            <button class="workHero-arrow" type="button" data-dir="-1" aria-label="prev">‹</button>
+
+                            <div class="workHeroThumbs__list" id="workHeroThumbList"></div>
+
+                            <button class="workHero-arrow" type="button" data-dir="1" aria-label="next">›</button>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 右：概要 -->
+                    <div class="workHero__info">
+
+                        <p class="workKicker">個人制作</p>
+                        <!-- タイトル差し替え -->
+                        <h1 class="workTitle">てっくん</h1>
+                        <p class="workSub">
+                            プログラミング学習アプリCytech（サイテック）のモチーフキャラクター
+                        </p>
+
+                        <div class="workMeta">
+                            <dl class="workMeta__dl">
+                                <div class="workMeta__row">
+                                    <dt>担当</dt>
+                                    <dd>キャラクターデザイン</dd>
+                                </div>
+                                <div class="workMeta__row">
+                                    <dt>期間</dt>
+                                    <dd>2026.02（例）</dd>
+                                </div>
+
+                            </dl>
+
+                            <!-- CTA -->
+                            <div class="workCtas">
+                                <a class="workBtn workBtn--main"
+                                    href="https://drive.google.com/file/d/1vH2ggU97Fm7oPpptrYlZ_zH2PWs3Bd8T/view?usp=sharing"
+                                    target="_blank" rel="noopener">
+                                    <i class="fa-solid fa-play"></i> PDFを見る
+                                </a>
+                                <a class="workBtn workBtn--sub" href="../index.html#contact">
+                                    <i class="fa-regular fa-envelope"></i> 相談する
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ===== CONTENT ===== -->
+        <section class="workBody">
+            <div class="workBody__inner">
+
+                <div class="workCard2">
+                    <h2 class="workH2">OVERVIEW</h2>
+                    <p class="workP">
+                        この作品の概要を2〜4行で。<br>
+                        「誰のために / 何を解決するか / どう作ったか」を短く書くと強いです。
+                    </p>
+                </div>
+
+                <div class="workGrid2">
+                    <div class="workCard2">
+                        <h2 class="workH2">ROLE</h2>
+                        <ul class="workList">
+                            <li>UI設計</li>
+                            <li>デザイン制作（Figma / Illustrator）</li>
+                            <li>HTML/CSS/JS 実装</li>
+                        </ul>
+                    </div>
+
+                    <div class="workCard2">
+                        <h2 class="workH2">TECH STACK</h2>
+                        <div class="workTags">
+                            <span class="workTag">ibis PaintX</span>
+                            <span class="workTag">Illustrator</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="workCard2">
+                    <h2 class="workH2">POINTS</h2>
+                    <div class="workPoints">
+                        <div class="workPoint">
+                            <p class="workPoint__title">① こだわりポイント</p>
+                            <p class="workP">UIをゲーム風に統一し、導線を“選択→実行”に寄せました。</p>
+                        </div>
+
+                        <div class="workPoint">
+                            <p class="workPoint__title">② 工夫</p>
+                            <p class="workP">共通ヘッダー/フッターの読み込み、アニメーションの軽量化を意識。</p>
+                        </div>
+
+                        <div class="workPoint">
+                            <p class="workPoint__title">③ 苦労と解決</p>
+                            <p class="workP">モバイルでの100vh問題を、要素の固定高さと余白設計で解決。</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 前後ナビ -->
+                <div class="workPager">
+                    <a class="workPager__btn" href="./aika-dtp.html">
+                        <i class="fa-solid fa-arrow-left"></i> PREV
+                    </a>
+                    <a class="workPager__btn" href="../index.html#works">
+                        <i class="fa-solid fa-table-cells-large"></i> 一覧へ
+                    </a>
+                    <a class="workPager__btn" href="./line-stamp.html">
+                        NEXT <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer id="footer" class="footer"><!-- フッター挿入 --></footer>
+
+</body>
+
+</html>
