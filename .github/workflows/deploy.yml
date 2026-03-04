@@ -21,7 +21,5 @@ jobs:
             cd /var/www/portfolio
             git fetch --all
             git reset --hard origin/main
-            sudo chown -R www-data:www-data /var/www/portfolio
-            sudo find /var/www/portfolio -type d -exec chmod 755 {} \;
-            sudo find /var/www/portfolio -type f -exec chmod 644 {} \;
+            
             sudo systemctl reload apache2
