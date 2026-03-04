@@ -287,12 +287,12 @@ function initWorkHeroThumbs() {
 
     // works 詳細ページ用（/works/ 配下想定）
     const items = [
-        { href: "./file01.html", img: "../img/works-01.png", alt: "work 1" },
-        { href: "./file02.html", img: "../img/works-02.png", alt: "work 2" },
-        { href: "./file03.html", img: "../img/works-03.png", alt: "work 3" },
-        { href: "./file04.html", img: "../img/works-04.png", alt: "work 4" },
-        { href: "./file05.html", img: "../img/works-05.png", alt: "work 5" },
-        { href: "./file06.html", img: "../img/works-06.png", alt: "work 6" },
+        { href: "./laravel-vending-system.html", img: "../img/works-01.png", alt: "work 1" },
+        { href: "./poire-clinic.html", img: "../img/works-02.png", alt: "work 2" },
+        { href: "./portfolio-site.html", img: "../img/works-03.png", alt: "work 3" },
+        { href: "./aika-dtp.html", img: "../img/works-04.png", alt: "work 4" },
+        { href: "./cytech-character-design.html", img: "../img/works-05.png", alt: "work 5" },
+        { href: "./line-stamp.html", img: "../img/works-06.png", alt: "work 6" },
     ];
 
     const current = location.pathname.split("/").pop(); // file02.html など
@@ -327,7 +327,7 @@ function initWorkHeroGallery() {
 
     // ★ページごとに「別画像」を定義
     const galleries = {
-        "laravel-system.html": [
+        "laravel-vending-system.html": [
             "../img/works-01.png",
             "../img/works/file01-01.png",
             "../img/works/file01-02.png",
