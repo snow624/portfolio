@@ -18,8 +18,17 @@ jobs:
           port: 22
           script: |
             set -e
+
+            # 1) リポジトリの所有者を SSH_USER に統一（←これで FETCH_HEAD 権限問題が消える）
+            sudo chown -R $USER:$USER /var/www/portfolio
+
+            # 2) Git の安全設定（dubious ownership 対策）
+            git config --global --add safe.directory /var/www/portfolio
+
+            # 3) deploy
             cd /var/www/portfolio
             git fetch --all
             git reset --hard origin/main
-            
+
+            # 4) apache reload
             sudo systemctl reload apache2
