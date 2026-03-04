@@ -30,17 +30,23 @@ async function loadLayout(selector, path) {
 
 // ヘッダー・フッターで画像表示
 function fixHeaderPaths(base, isWorksPage) {
-    const header = document.querySelector("#header", "#footer");
-    if (!header || !isWorksPage) return;
+    if (!isWorksPage) return;
 
+    const header = document.querySelector("#header");
+    const footer = document.querySelector("#footer");
+    if (!header || !footer) return;
+
+    // header内の #リンク を index.html#〜 に変換
     header.querySelectorAll('a[href^="#"]').forEach((a) => {
         a.href = base + "index.html" + a.getAttribute("href");
     });
 
+    // header内の img/ を ../img/ に
     header.querySelectorAll('img[src^="img/"]').forEach((img) => {
         img.src = base + img.getAttribute("src");
     });
 
+    // footerも同様
     footer.querySelectorAll('a[href^="#"]').forEach((a) => {
         a.href = base + "index.html" + a.getAttribute("href");
     });
@@ -321,20 +327,20 @@ function initWorkHeroGallery() {
 
     // ★ページごとに「別画像」を定義
     const galleries = {
-        "laravel-system": [
+        "laravel-system.html": [
             "../img/works-01.png",
             "../img/works/file01-01.png",
             "../img/works/file01-02.png",
             "../img/works/file01-03.png",
         ],
-        "poire-clinic": [
+        "poire-clinic.html": [
             "../img/works-02.png",
             "../img/works/file02-01.png",
             "../img/works/file02-02.png",
             "../img/works/file02-03.png",
 
         ],
-        "portfolio-site": [
+        "portfolio-site.html": [
             "../img/works-03.png",
             "../img/works/file03-01.png",
             "../img/works/file03-02.png",
@@ -360,8 +366,6 @@ function initWorkHeroGallery() {
             "../img/works-06.png",
             "../img/works/file06-01.png",
             "../img/works/file06-02.png",
-            "../img/works/file06-03.png",
-
         ],
     };
 
