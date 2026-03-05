@@ -49,13 +49,13 @@
                 </nav>
                 <!-- 前後ナビ -->
                 <div class="workPager">
-                    <a class="workPager__btn" href="./laravel-vending-system.html">
+                    <a class="workPager__btn" href="./line-stamp.html">
                         <i class="fa-solid fa-arrow-left"></i> PREV
                     </a>
                     <a class="workPager__btn" href="../index.html#works">
                         <i class="fa-solid fa-table-cells-large"></i> 一覧へ
                     </a>
-                    <a class="workPager__btn" href="./portfolio-site.html">
+                    <a class="workPager__btn" href="./poire-clinic.html">
                         NEXT <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
@@ -85,9 +85,9 @@
 
                         <p class="workKicker">クライアントワーク</p>
                         <!-- タイトル差し替え -->
-                        <h1 class="workTitle">ポワール治療院</h1>
+                        <h1 class="workTitle">作品タイトルが入ります</h1>
                         <p class="workSub">
-                            訪問鍼灸・マッサージ治療院のWebサイト制作
+                            ここに短いキャッチコピー（例：キャラクター選択UIのポートフォリオサイト）
                         </p>
 
                         <div class="workMeta">
@@ -98,12 +98,15 @@
                                 </div>
                                 <div class="workMeta__row">
                                     <dt>期間</dt>
-                                    <dd>2024年11月~ / 制作期間：3ヶ月（打ち合わせ含む）</dd>
+                                    <dd>2026.02（例）</dd>
                                 </div>
                                 <div class="workMeta__row">
                                     <dt>URL</dt>
                                     <dd>
-                                        <p>http://www.amgst.co.jp</p>
+                                        <a class="workLink" href="http://www.amgst.co.jp/" target="_blank"
+                                            rel="noopener">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i> サイトを見る
+                                        </a>
                                     </dd>
                                 </div>
                                 <div class="workMeta__row">
@@ -119,9 +122,9 @@
 
                             <!-- CTA -->
                             <div class="workCtas">
-                                <a class="workBtn workBtn--main" href="http://www.amgst.co.jp" target="_blank"
+                                <a class="workBtn workBtn--main" href="https://example.com" target="_blank"
                                     rel="noopener">
-                                    <i class="fa-solid fa-play"></i> サイトを見る
+                                    <i class="fa-solid fa-play"></i> DEMOを見る
                                 </a>
                                 <a class="workBtn workBtn--sub" href="../index.html#contact">
                                     <i class="fa-regular fa-envelope"></i> 相談する
@@ -143,12 +146,8 @@
                 <div class="workCard2">
                     <h2 class="workH2">OVERVIEW</h2>
                     <p class="workP">
-                    <p class="workP">
-                        訪問鍼灸・マッサージを行う「ポワール治療院」のWebサイトを制作しました。
-                        通院が難しい高齢者やご家族が安心して利用できるよう、
-                        サービス内容や訪問治療の特徴を分かりやすく伝える構成を意識しています。
-                        地域の利用者が必要な情報にすぐアクセスできるよう、シンプルで見やすいデザインを心がけました。
-                    </p>
+                        この作品の概要を2〜4行で。<br>
+                        「誰のために / 何を解決するか / どう作ったか」を短く書くと強いです。
                     </p>
                 </div>
 
@@ -156,10 +155,9 @@
                     <div class="workCard2">
                         <h2 class="workH2">ROLE</h2>
                         <ul class="workList">
-                            <li>サイトデザイン</li>
-                            <li>HTML / CSS コーディング</li>
-                            <li>レスポンシブ対応</li>
-                            <li>サイト公開・運用サポート</li>
+                            <li>UI設計</li>
+                            <li>デザイン制作（Figma / Illustrator）</li>
+                            <li>HTML/CSS/JS 実装</li>
                         </ul>
                     </div>
 
@@ -169,6 +167,8 @@
                             <span class="workTag">HTML</span>
                             <span class="workTag">CSS</span>
                             <span class="workTag">JavaScript</span>
+                            <span class="workTag">Laravel</span>
+                            <span class="workTag">MySQL</span>
                         </div>
                     </div>
                 </div>
@@ -177,41 +177,68 @@
                     <h2 class="workH2">POINTS</h2>
                     <div class="workPoints">
                         <div class="workPoint">
-                            <p class="workPoint__title">① ターゲットに配慮したデザイン</p>
-                            <p class="workP">高齢者やご家族が閲覧することを想定し、文字サイズや配色を見やすく調整しました。
-                                直感的に情報が理解できるよう、シンプルなレイアウトを採用しています。</p>
+                            <p class="workPoint__title">① こだわりポイント</p>
+                            <p class="workP">UIをゲーム風に統一し、導線を“選択→実行”に寄せました。</p>
                         </div>
 
                         <div class="workPoint">
-                            <p class="workPoint__title">② 情報の整理</p>
-                            <p class="workP">訪問治療の内容や利用方法が分かりやすく伝わるよう、情報の優先度を整理し、
-                                ユーザーが必要な情報へ迷わずアクセスできる構成にしました。</p>
+                            <p class="workPoint__title">② 工夫</p>
+                            <p class="workP">共通ヘッダー/フッターの読み込み、アニメーションの軽量化を意識。</p>
                         </div>
 
                         <div class="workPoint">
-                            <p class="workPoint__title">③ レスポンシブ対応</p>
-                            <p class="workP">スマートフォンからの閲覧が多いことを想定し、
-                                モバイル端末でも読みやすいレイアウトになるよう調整しました。</p>
+                            <p class="workPoint__title">③ 苦労と解決</p>
+                            <p class="workP">モバイルでの100vh問題を、要素の固定高さと余白設計で解決。</p>
                         </div>
                     </div>
                 </div>
 
+                <!-- 追加スクショ -->
+                <div class="workCard2">
+                    <h2 class="workH2">SCREENSHOTS</h2>
+
+                    <div class="workShots">
+                        <button class="shot" type="button" data-img="../img/works/sample.png" aria-label="screenshot 1">
+                            <img src="../img/works/file02-04.png" alt="">
+                        </button>
+                        <button class="shot" type="button" data-img="../img/works/sample2.png"
+                            aria-label="screenshot 2">
+                            <img src="../img/works/file02-05.png" alt="">
+                        </button>
+                    </div>
+
+                    <p class="workHint">
+                        <i class="fa-solid fa-magnifying-glass"></i> クリックで拡大表示できます
+                    </p>
+                </div>
 
                 <!-- 前後ナビ -->
                 <div class="workPager">
-                    <a class="workPager__btn" href="./laravel-vending-system.html">
+                    <a class="workPager__btn" href="./line-stamp.html">
                         <i class="fa-solid fa-arrow-left"></i> PREV
                     </a>
                     <a class="workPager__btn" href="../index.html#works">
                         <i class="fa-solid fa-table-cells-large"></i> 一覧へ
                     </a>
-                    <a class="workPager__btn" href="./portfolio-site.html">
+                    <a class="workPager__btn" href="./poire-clinic.html">
                         NEXT <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
 
             </div>
         </section>
+
+        <!-- モーダル（画像拡大） -->
+        <div class="workModal" hidden>
+            <button class="workModal__bg" type="button" aria-label="close"></button>
+            <div class="workModal__panel" role="dialog" aria-modal="true" aria-label="image preview">
+                <button class="workModal__close" type="button" aria-label="close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <img class="workModal__img" src="" alt="">
+            </div>
+        </div>
+
 
     </main>
 
