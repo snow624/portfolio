@@ -327,18 +327,17 @@ function initWorkHeroGallery() {
 
     // ★ページごとに「別画像」を定義
     const galleries = {
-        "laravel-vending-system.html": [
-            "../img/works-01.png",
-            "../img/works/file01-01.png",
-            "../img/works/file01-02.png",
-            "../img/works/file01-03.png",
-        ],
         "poire-clinic.html": [
             "../img/works-02.png",
             "../img/works/file02-01.png",
             "../img/works/file02-02.png",
             "../img/works/file02-03.png",
-
+        ],
+        "cafe.html": [
+            "../img/works-02.png",
+            "../img/works/file02-01.png",
+            "../img/works/file02-02.png",
+            "../img/works/file02-03.png",
         ],
         "portfolio-site.html": [
             "../img/works-03.png",
@@ -346,12 +345,17 @@ function initWorkHeroGallery() {
             "../img/works/file03-02.png",
             "../img/works/file03-03s.png",
         ],
-        "aika-dtp.html": [
-            "../img/works-04.png",
-            "../img/works/file04-01.png",
-            "../img/works/file04-02.png",
-            "../img/works/file04-03.png",
-
+        "laravel-vending-system.html": [
+            "../img/works-01.png",
+            "../img/works/file01-01.png",
+            "../img/works/file01-02.png",
+            "../img/works/file01-03.png",
+        ],
+        "spring-boot-system.html": [
+            "../img/works-01.png",
+            "../img/works/file01-01.png",
+            "../img/works/file01-02.png",
+            "../img/works/file01-03.png",
         ],
         "cytech-character-design.html": [
             "../img/works-05.png",
@@ -360,7 +364,12 @@ function initWorkHeroGallery() {
             "../img/works/file05-03.png",
             "../img/works/file05-04.png",
             "../img/works/file05-05.png",
-
+        ],
+        "aika-dtp.html": [
+            "../img/works-04.png",
+            "../img/works/file04-01.png",
+            "../img/works/file04-02.png",
+            "../img/works/file04-03.png",
         ],
         "line-stamp.html": [
             "../img/works-06.png",
