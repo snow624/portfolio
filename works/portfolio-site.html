@@ -138,8 +138,10 @@
                 <div class="workCard2">
                     <h2 class="workH2">OVERVIEW</h2>
                     <p class="workP">
-                        この作品の概要を2〜4行で。<br>
-                        「誰のために / 何を解決するか / どう作ったか」を短く書くと強いです。
+                        就職活動で自分のスキルや制作実績を伝えるために制作したポートフォリオサイトです。<br>
+                        デザインからコーディング、サーバー構築までをすべて個人で行い、
+                        GitHub Actionsを使用した自動デプロイ環境を構築しています。<br>
+                        制作物を見やすく伝えることを目的に、シンプルで視認性の高いUI設計を意識しました。
                     </p>
                 </div>
 
@@ -147,9 +149,11 @@
                     <div class="workCard2">
                         <h2 class="workH2">ROLE</h2>
                         <ul class="workList">
-                            <li>UI設計</li>
-                            <li>デザイン制作（Figma / Illustrator）</li>
-                            <li>HTML/CSS/JS 実装</li>
+                            <li>サイト構成設計 / UI設計</li>
+                            <li>デザイン制作</li>
+                            <li>HTML / CSS / JavaScript 実装</li>
+                            <li>GitHub管理 / CI/CD環境構築</li>
+                            <li>GCPサーバー構築・デプロイ</li>
                         </ul>
                     </div>
 
@@ -159,10 +163,12 @@
                             <span class="workTag">HTML</span>
                             <span class="workTag">CSS</span>
                             <span class="workTag">JavaScript</span>
-                            <span class="workTag">GitHub (GitHub Actions)</span>
-                            <span class="workTag">GCP (Compute Engine)</span>
+                            <span class="workTag">Git</span>
+                            <span class="workTag">GitHub</span>
+                            <span class="workTag">GitHub Actions</span>
+                            <span class="workTag">GCP Compute Engine</span>
                             <span class="workTag">Apache</span>
-                            <span class="workTag">SSL (Let's Encrypt)</span>
+                            <span class="workTag">Let's Encrypt</span>
                         </div>
                     </div>
                 </div>
@@ -171,22 +177,36 @@
                     <h2 class="workH2">POINTS</h2>
                     <div class="workPoints">
                         <div class="workPoint">
-                            <p class="workPoint__title">① こだわりポイント</p>
-                            <p class="workP">UIをゲーム風に統一し、導線を“選択→実行”に寄せました。</p>
+                            <p class="workPoint__title">① 見やすさを重視したUI設計</p>
+                            <p class="workP">制作実績を短時間で理解できるように、作品一覧・詳細ページの構成を整理しました。
+                                視線の流れを意識し、情報の優先順位を考えたレイアウト設計を行っています。</p>
                         </div>
 
                         <div class="workPoint">
-                            <p class="workPoint__title">② 工夫</p>
-                            <p class="workP">共通ヘッダー/フッターの読み込み、アニメーションの軽量化を意識。<br>
-                                GitHub Actionsを使用しpush時に自動デプロイされる環境を構築しました。</p>
+                            <p class="workPoint__title">② 自動デプロイ環境の構築</p>
+                            <p class="workP">GitHub Actionsを使用し、mainブランチへpushすると
+                                自動でGCPサーバーへデプロイされるCI/CD環境を構築しました。
+                                手動アップロードを不要にし、開発効率を向上させています。</p>
                         </div>
 
                         <div class="workPoint">
-                            <p class="workPoint__title">③ 苦労と解決</p>
-                            <p class="workP">SSH認証エラーが発生したため
-                                公開鍵と秘密鍵の管理を見直して解決しました。</p>
+                            <p class="workPoint__title">③ SSH認証エラーの解決</p>
+                            <p class="workP">デプロイ時にSSH接続エラーが発生したため、
+                                公開鍵・秘密鍵の設定とGitHub Secretsの管理方法を見直しました。
+                                ログを確認しながら原因を特定し、安定したデプロイ環境を構築しました。</p>
                         </div>
+
                     </div>
+
+                </div>
+
+                <div class="workCard2">
+                    <h2 class="workH2">ARCHITECTURE</h2>
+
+                    <p class="workP">
+                        GitHub → GitHub Actions → GCP → ComputeEngine → Apache → yukikawakami.dev
+                    </p>
+
                 </div>
 
                 <!-- 前後ナビ -->

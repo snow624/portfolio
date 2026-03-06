@@ -328,10 +328,10 @@ function initWorkHeroGallery() {
     // ★ページごとに「別画像」を定義
     const galleries = {
         "poire-clinic.html": [
-            "../img/works-02.png",
-            "../img/works/file02-01.png",
-            "../img/works/file02-02.png",
-            "../img/works/file02-03.png",
+            "../img/works/poire.png",
+            "../img/works/poire-01.png",
+            "../img/works/poire-02.png",
+            "../img/works/poire-03.png",
         ],
         "cafe.html": [
             "../img/works-02.png",
@@ -340,10 +340,10 @@ function initWorkHeroGallery() {
             "../img/works/file02-03.png",
         ],
         "portfolio-site.html": [
-            "../img/works-03.png",
-            "../img/works/file03-01.png",
-            "../img/works/file03-02.png",
-            "../img/works/file03-03s.png",
+            "../img/works/portfolio.png",
+            "../img/works/portfolio-01.png",
+            "../img/works/portfolio-02.png",
+            "../img/works/portfolio-03.png",
         ],
         "laravel-vending-system.html": [
             "../img/works-01.png",
@@ -358,23 +358,23 @@ function initWorkHeroGallery() {
             "../img/works/file01-03.png",
         ],
         "cytech-character-design.html": [
-            "../img/works-05.png",
-            "../img/works/file05-01.png",
-            "../img/works/file05-02.png",
-            "../img/works/file05-03.png",
-            "../img/works/file05-04.png",
-            "../img/works/file05-05.png",
+            "../img/works/cytech.png",
+            "../img/works/cytech-01.png",
+            "../img/works/cytech-02.png",
+            "../img/works/cytech-03.png",
+            "../img/works/cytech-04.png",
+            "../img/works/cytech-05.png",
         ],
         "aika-dtp.html": [
-            "../img/works-04.png",
-            "../img/works/file04-01.png",
-            "../img/works/file04-02.png",
-            "../img/works/file04-03.png",
+            "../img/works/amg.png",
+            "../img/works/amg-01.JPG",
+            "../img/works/amg-02.JPG",
+            "../img/works/amg-03.JPG",
         ],
         "line-stamp.html": [
-            "../img/works-06.png",
-            "../img/works/file06-01.png",
-            "../img/works/file06-02.png",
+            "../img/works/line.png",
+            "../img/works/line-01.png",
+            "../img/works/line-02.png",
         ],
     };
 
