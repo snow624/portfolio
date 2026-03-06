@@ -343,7 +343,6 @@ function initWorkHeroGallery() {
             "../img/works/portfolio.png",
             "../img/works/portfolio-01.png",
             "../img/works/portfolio-02.png",
-            "../img/works/portfolio-03.png",
         ],
         "laravel-vending-system.html": [
             "../img/works-01.png",
@@ -362,8 +361,6 @@ function initWorkHeroGallery() {
             "../img/works/cytech-01.png",
             "../img/works/cytech-02.png",
             "../img/works/cytech-03.png",
-            "../img/works/cytech-04.png",
-            "../img/works/cytech-05.png",
         ],
         "aika-dtp.html": [
             "../img/works/amg.png",

@@ -65,7 +65,7 @@
 
 
                         <!-- メイン画像 -->
-                        <img id="workHeroMain" src="../img/works-02.png" alt="作品サムネイル">
+                        <img id="workHeroMain" src="../img/works-02.png" alt="Laravel 自動販売機売上管理システム">
 
                         <!-- 下：別画像サムネ -->
                         <div class="workHeroThumbs">
@@ -94,26 +94,18 @@
                             <dl class="workMeta__dl">
                                 <div class="workMeta__row">
                                     <dt>担当</dt>
-                                    <dd>デザイン / コーディング</dd>
+                                    <dd>画面設計 / フロント実装 / バックエンド実装 / DB設計</dd>
                                 </div>
                                 <div class="workMeta__row">
                                     <dt>期間</dt>
-                                    <dd>2026.02（例）</dd>
+                                    <dd>2025年7月~（1.5ヶ月）</dd>
                                 </div>
-                                <div class="workMeta__row">
-                                    <dt>URL</dt>
-                                    <dd>
-                                        <a class="workLink" href="http://www.amgst.co.jp/" target="_blank"
-                                            rel="noopener">
-                                            <i class="fa-solid fa-arrow-up-right-from-square"></i> サイトを見る
-                                        </a>
-                                    </dd>
-                                </div>
+
                                 <div class="workMeta__row">
                                     <dt>GitHub</dt>
                                     <dd>
-                                        <a class="workLink" href="https://github.com/snow624" target="_blank"
-                                            rel="noopener">
+                                        <a class="workLink" href="https://github.com/snow624/vending-system"
+                                            target="_blank" rel="noopener" target="_blank" rel="noopener">
                                             <i class="fa-brands fa-github"></i> リポジトリ
                                         </a>
                                     </dd>
@@ -122,10 +114,6 @@
 
                             <!-- CTA -->
                             <div class="workCtas">
-                                <a class="workBtn workBtn--main" href="https://example.com" target="_blank"
-                                    rel="noopener">
-                                    <i class="fa-solid fa-play"></i> DEMOを見る
-                                </a>
                                 <a class="workBtn workBtn--sub" href="../index.html#contact">
                                     <i class="fa-regular fa-envelope"></i> 相談する
                                 </a>
@@ -146,8 +134,9 @@
                 <div class="workCard2">
                     <h2 class="workH2">OVERVIEW</h2>
                     <p class="workP">
-                        この作品の概要を2〜4行で。<br>
-                        「誰のために / 何を解決するか / どう作ったか」を短く書くと強いです。
+                        Laravelを用いて、自動販売機の商品情報を管理できる売上管理システムを制作しました。<br>
+                        商品一覧表示・検索・新規登録・画像アップロード・ページネーションなど、管理画面に必要な基本機能を実装しています。<br>
+                        MVCの構成を意識しながら、入力チェックやデータ保存処理を行い、実務を意識した構成で開発しました。
                     </p>
                 </div>
 
@@ -155,20 +144,24 @@
                     <div class="workCard2">
                         <h2 class="workH2">ROLE</h2>
                         <ul class="workList">
-                            <li>UI設計</li>
-                            <li>デザイン制作（Figma / Illustrator）</li>
-                            <li>HTML/CSS/JS 実装</li>
+                            <li>画面設計</li>
+                            <li>商品一覧・検索・登録機能の実装</li>
+                            <li>バリデーション・保存処理の実装</li>
+                            <li>画像アップロード機能の実装</li>
+                            <li>データベース設計・テーブル作成</li>
                         </ul>
                     </div>
 
                     <div class="workCard2">
                         <h2 class="workH2">TECH STACK</h2>
                         <div class="workTags">
+                            <span class="workTag">PHP</span>
+                            <span class="workTag">Laravel</span>
+                            <span class="workTag">Blade</span>
+                            <span class="workTag">MySQL</span>
                             <span class="workTag">HTML</span>
                             <span class="workTag">CSS</span>
                             <span class="workTag">JavaScript</span>
-                            <span class="workTag">Laravel</span>
-                            <span class="workTag">MySQL</span>
                         </div>
                     </div>
                 </div>
@@ -177,41 +170,33 @@
                     <h2 class="workH2">POINTS</h2>
                     <div class="workPoints">
                         <div class="workPoint">
-                            <p class="workPoint__title">① こだわりポイント</p>
-                            <p class="workP">UIをゲーム風に統一し、導線を“選択→実行”に寄せました。</p>
+                            <p class="workPoint__title">① 一覧性を意識した管理画面設計</p>
+                            <p class="workP">商品情報を見やすく整理し、検索フォーム・テーブル表示・操作ボタンをわかりやすく配置しました。</p>
                         </div>
 
                         <div class="workPoint">
-                            <p class="workPoint__title">② 工夫</p>
-                            <p class="workP">共通ヘッダー/フッターの読み込み、アニメーションの軽量化を意識。</p>
+                            <p class="workPoint__title">② CRUDと入力チェックの実装</p>
+                            <p class="workP">商品の登録・表示を中心に、バリデーションや保存処理を実装し、データを安全に扱えるようにしました。</p>
                         </div>
 
                         <div class="workPoint">
-                            <p class="workPoint__title">③ 苦労と解決</p>
-                            <p class="workP">モバイルでの100vh問題を、要素の固定高さと余白設計で解決。</p>
+                            <p class="workPoint__title">③ 実務を意識した構成</p>
+                            <p class="workP">MVCの役割を意識しながら、Bladeテンプレートの分割やフォーム処理を整理し、保守しやすい構成を目指しました。</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- 追加スクショ -->
                 <div class="workCard2">
-                    <h2 class="workH2">SCREENSHOTS</h2>
-
-                    <div class="workShots">
-                        <button class="shot" type="button" data-img="../img/works/sample.png" aria-label="screenshot 1">
-                            <img src="../img/works/file02-04.png" alt="">
-                        </button>
-                        <button class="shot" type="button" data-img="../img/works/sample2.png"
-                            aria-label="screenshot 2">
-                            <img src="../img/works/file02-05.png" alt="">
-                        </button>
-                    </div>
-
-                    <p class="workHint">
-                        <i class="fa-solid fa-magnifying-glass"></i> クリックで拡大表示できます
-                    </p>
+                    <h2 class="workH2">FUNCTIONS</h2>
+                    <ul class="workList">
+                        <li>商品一覧表示</li>
+                        <li>商品検索</li>
+                        <li>商品新規登録</li>
+                        <li>画像アップロード</li>
+                        <li>ページネーション</li>
+                        <li>入力バリデーション</li>
+                    </ul>
                 </div>
-
                 <!-- 前後ナビ -->
                 <div class="workPager">
                     <a class="workPager__btn" href="./portfolio-site.html">
@@ -227,18 +212,6 @@
 
             </div>
         </section>
-
-        <!-- モーダル（画像拡大） -->
-        <div class="workModal" hidden>
-            <button class="workModal__bg" type="button" aria-label="close"></button>
-            <div class="workModal__panel" role="dialog" aria-modal="true" aria-label="image preview">
-                <button class="workModal__close" type="button" aria-label="close">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-                <img class="workModal__img" src="" alt="">
-            </div>
-        </div>
-
 
     </main>
 

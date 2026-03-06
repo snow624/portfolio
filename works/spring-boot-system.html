@@ -65,7 +65,7 @@
 
 
                         <!-- メイン画像 -->
-                        <img id="workHeroMain" src="../img/works-02.png" alt="作品サムネイル">
+                        <img id="workHeroMain" src="../img/works/.png" alt="作品サムネイル">
 
                         <!-- 下：別画像サムネ -->
                         <div class="workHeroThumbs">
@@ -83,37 +83,29 @@
                     <!-- 右：概要 -->
                     <div class="workHero__info">
 
-                        <p class="workKicker">個人制作</p>
+                        <p class="workKicker m">個人制作</p>
                         <!-- タイトル差し替え -->
                         <h1 class="workTitle">spring-boot-system</h1>
                         <p class="workSub">
-                            商品購入・カート機能を実装したECサイトシステム
+                            商品一覧・カート・購入機能を実装したECサイトアプリケーション
                         </p>
 
                         <div class="workMeta">
                             <dl class="workMeta__dl">
                                 <div class="workMeta__row">
                                     <dt>担当</dt>
-                                    <dd>デザイン / コーディング</dd>
+                                    <dd>画面設計 / フロント実装 / バックエンド実装 / DB設計</dd>
                                 </div>
                                 <div class="workMeta__row">
                                     <dt>期間</dt>
-                                    <dd>2026.02（例）</dd>
+                                    <dd>2025年12~（1ヶ月）</dd>
                                 </div>
-                                <div class="workMeta__row">
-                                    <dt>URL</dt>
-                                    <dd>
-                                        <a class="workLink" href="http://www.amgst.co.jp/" target="_blank"
-                                            rel="noopener">
-                                            <i class="fa-solid fa-arrow-up-right-from-square"></i> サイトを見る
-                                        </a>
-                                    </dd>
-                                </div>
+
                                 <div class="workMeta__row">
                                     <dt>GitHub</dt>
                                     <dd>
-                                        <a class="workLink" href="https://github.com/snow624" target="_blank"
-                                            rel="noopener">
+                                        <a class="workLink" href="https://github.com/snow624/Socks-Store"
+                                            target="_blank" rel="noopener">
                                             <i class="fa-brands fa-github"></i> リポジトリ
                                         </a>
                                     </dd>
@@ -122,10 +114,6 @@
 
                             <!-- CTA -->
                             <div class="workCtas">
-                                <a class="workBtn workBtn--main" href="https://example.com" target="_blank"
-                                    rel="noopener">
-                                    <i class="fa-solid fa-play"></i> DEMOを見る
-                                </a>
                                 <a class="workBtn workBtn--sub" href="../index.html#contact">
                                     <i class="fa-regular fa-envelope"></i> 相談する
                                 </a>
@@ -146,8 +134,9 @@
                 <div class="workCard2">
                     <h2 class="workH2">OVERVIEW</h2>
                     <p class="workP">
-                        この作品の概要を2〜4行で。<br>
-                        「誰のために / 何を解決するか / どう作ったか」を短く書くと強いです。
+                        Spring BootとThymeleafを使用してECサイトアプリケーションを開発しました。<br>
+                        商品一覧表示・カート機能・購入処理など、ECサイトの基本機能を実装しています。<br>
+                        MVC構造を意識し、Controller・Service・Repositoryの役割を分離しながら開発しました。
                     </p>
                 </div>
 
@@ -155,40 +144,55 @@
                     <div class="workCard2">
                         <h2 class="workH2">ROLE</h2>
                         <ul class="workList">
-                            <li>UI設計</li>
-                            <li>デザイン制作（Figma / Illustrator）</li>
-                            <li>HTML/CSS/JS 実装</li>
+                            <li>画面設計</li>
+                            <li>商品一覧画面の実装</li>
+                            <li>カート機能の実装</li>
+                            <li>購入処理の実装</li>
+                            <li>データベース設計</li>
                         </ul>
                     </div>
 
                     <div class="workCard2">
                         <h2 class="workH2">TECH STACK</h2>
                         <div class="workTags">
+                            <span class="workTag">Java</span>
+                            <span class="workTag">Spring Boot</span>
+                            <span class="workTag">Thymeleaf</span>
+                            <span class="workTag">MySQL</span>
                             <span class="workTag">HTML</span>
                             <span class="workTag">CSS</span>
-                            <span class="workTag">JavaScript</span>
-                            <span class="workTag">Laravel</span>
-                            <span class="workTag">MySQL</span>
                         </div>
                     </div>
-                </div>
 
+
+                </div>
+                <div class="workCard2">
+                    <h2 class="workH2">FUNCTIONS</h2>
+                    <ul class="workList">
+                        <li>商品一覧表示</li>
+                        <li>商品詳細表示</li>
+                        <li>カート機能</li>
+                        <li>購入処理</li>
+                        <li>ログイン機能</li>
+                        <li>セッション管理</li>
+                    </ul>
+                </div>
                 <div class="workCard2">
                     <h2 class="workH2">POINTS</h2>
                     <div class="workPoints">
                         <div class="workPoint">
-                            <p class="workPoint__title">① こだわりポイント</p>
-                            <p class="workP">UIをゲーム風に統一し、導線を“選択→実行”に寄せました。</p>
+                            <p class="workPoint__title">① MVC構造を意識した設計</p>
+                            <p class="workP">Controller・Service・Repositoryを分離し、役割を明確にすることで保守性の高い構成を意識しました。</p>
                         </div>
 
                         <div class="workPoint">
-                            <p class="workPoint__title">② 工夫</p>
-                            <p class="workP">共通ヘッダー/フッターの読み込み、アニメーションの軽量化を意識。</p>
+                            <p class="workPoint__title">② セッションを利用したカート管理</p>
+                            <p class="workP">カートに追加した商品情報をセッションで管理し、ページ遷移後も状態が保持されるよう実装しました。</p>
                         </div>
 
                         <div class="workPoint">
-                            <p class="workPoint__title">③ 苦労と解決</p>
-                            <p class="workP">モバイルでの100vh問題を、要素の固定高さと余白設計で解決。</p>
+                            <p class="workPoint__title">③ DTOを使用したデータ管理</p>
+                            <p class="workP">DTOを利用してデータを整理し、画面表示用データとDBデータを分離して管理しました。</p>
                         </div>
                     </div>
                 </div>
@@ -199,17 +203,15 @@
 
                     <div class="workShots">
                         <button class="shot" type="button" data-img="../img/works/sample.png" aria-label="screenshot 1">
-                            <img src="../img/works/file02-04.png" alt="">
+                            <img src="../img/works/-04.png" alt="">
                         </button>
                         <button class="shot" type="button" data-img="../img/works/sample2.png"
                             aria-label="screenshot 2">
-                            <img src="../img/works/file02-05.png" alt="">
+                            <img src="../img/works/-05.png" alt="">
                         </button>
                     </div>
 
-                    <p class="workHint">
-                        <i class="fa-solid fa-magnifying-glass"></i> クリックで拡大表示できます
-                    </p>
+
                 </div>
 
                 <!-- 前後ナビ -->
@@ -227,17 +229,6 @@
 
             </div>
         </section>
-
-        <!-- モーダル（画像拡大） -->
-        <div class="workModal" hidden>
-            <button class="workModal__bg" type="button" aria-label="close"></button>
-            <div class="workModal__panel" role="dialog" aria-modal="true" aria-label="image preview">
-                <button class="workModal__close" type="button" aria-label="close">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-                <img class="workModal__img" src="" alt="">
-            </div>
-        </div>
 
 
     </main>
