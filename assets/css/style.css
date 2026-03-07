@@ -1130,27 +1130,6 @@ section {
     margin: 0 auto;
 }
 
-.workBread {
-    text-align: left;
-    margin-bottom: 14px;
-}
-
-.workBread__link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: var(--color-text);
-    padding: 8px 12px;
-    border-radius: 14px;
-    border: 3px solid var(--color-text);
-    background: rgba(255, 255, 255, 0.65);
-}
-
-.workBread__link:hover {
-    background: rgba(255, 255, 255, 0.9);
-}
-
 .workHero__grid {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -1264,6 +1243,7 @@ section {
     width: 100%;
     height: 100%;
     display: block;
+    background-color: var(--color-bg);
 }
 
 .workHeroThumb.is-active {
@@ -1511,12 +1491,32 @@ section {
     color: var(--color-text-sub);
 }
 
+/* ワークページヘッダー  */
+.workPage .mv-select__top {
+    position: fixed;
+    top: 8px;
+    left: 10px;
+    z-index: 9999;
+}
+
+.workPage .mv-select__hero {
+    font-size: 2.5rem;
+}
+
+.workPage .mv-select__hero img {
+    width: 48px;
+    height: 48px;
+}
+
 /* pager */
 .workPager {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     gap: 12px;
     align-items: center;
+    /* display: flex; */
+    /* gap: 16px; */
+    margin-top: 16px;
 }
 
 .workPager__btn {
@@ -1525,7 +1525,7 @@ section {
     justify-content: center;
     gap: 8px;
 
-    padding: 12px 14px;
+    /* padding: 12px 14px; */
     border-radius: 14px;
     border: 4px solid var(--color-text);
 
@@ -1533,6 +1533,9 @@ section {
     text-decoration: none;
     color: var(--color-text);
     font-weight: 900;
+
+    padding: 10px 20px;
+    font-size: 14px;
 }
 
 .workPager__btn:hover {
@@ -1558,7 +1561,6 @@ section {
         grid-template-columns: 1fr;
     }
 }
-
 
 
 /* -------------------------------*/

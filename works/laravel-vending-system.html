@@ -32,20 +32,27 @@
     <script src="../assets/js/script.js" defer></script>
 </head>
 
-<body>
+<body class="workPage">
+
+    <div class="mv-select__top">
+        <h1 class="mv-select__hero">Portfolio
+            <img src="../img/icon.png">
+        </h1>
+        <p class="mv-select__by">by Yuki Kawakami</p>
+    </div>
 
     <header id="header" class="header"><!-- ヘッダー挿入 --></header>
 
     <main>
 
+
         <!-- ===== HERO ===== -->
         <section class="workHero">
+
             <div class="workHero__inner">
 
                 <nav class="workBread" aria-label="breadcrumb">
-                    <a href="../index.html#works" class="workBread__link">
-                        <i class="fa-solid fa-arrow-left"></i> WORKSへ戻る
-                    </a>
+
                 </nav>
                 <!-- 前後ナビ -->
                 <div class="workPager">
@@ -54,11 +61,14 @@
                     </a>
                     <a class="workPager__btn" href="../index.html#works">
                         <i class="fa-solid fa-table-cells-large"></i> 一覧へ
+
                     </a>
                     <a class="workPager__btn" href="./spring-boot-system.html">
                         NEXT <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
+
+
                 <div class="workHero__grid">
                     <!-- 左：サムネ -->
                     <div class="workHero__shot">
@@ -83,7 +93,7 @@
                     <!-- 右：概要 -->
                     <div class="workHero__info">
 
-                        <p class="workKicker">個人制作</p>
+                        <p class="workKicker m">個人制作</p>
                         <!-- タイトル差し替え -->
                         <h1 class="workTitle">laravel-vending-system</h1>
                         <p class="workSub">
@@ -167,6 +177,18 @@
                 </div>
 
                 <div class="workCard2">
+                    <h2 class="workH2">FUNCTIONS</h2>
+                    <ul class="workList">
+                        <li>商品一覧表示</li>
+                        <li>商品検索</li>
+                        <li>商品新規登録</li>
+                        <li>画像アップロード</li>
+                        <li>ページネーション</li>
+                        <li>入力バリデーション</li>
+                    </ul>
+                </div>
+
+                <div class="workCard2">
                     <h2 class="workH2">POINTS</h2>
                     <div class="workPoints">
                         <div class="workPoint">
@@ -186,17 +208,7 @@
                     </div>
                 </div>
 
-                <div class="workCard2">
-                    <h2 class="workH2">FUNCTIONS</h2>
-                    <ul class="workList">
-                        <li>商品一覧表示</li>
-                        <li>商品検索</li>
-                        <li>商品新規登録</li>
-                        <li>画像アップロード</li>
-                        <li>ページネーション</li>
-                        <li>入力バリデーション</li>
-                    </ul>
-                </div>
+
                 <!-- 前後ナビ -->
                 <div class="workPager">
                     <a class="workPager__btn" href="./portfolio-site.html">

@@ -32,7 +32,14 @@
     <script src="../assets/js/script.js" defer></script>
 </head>
 
-<body>
+<body class="workPage">
+
+    <div class="mv-select__top">
+        <h1 class="mv-select__hero">Portfolio
+            <img src="../img/icon.png">
+        </h1>
+        <p class="mv-select__by">by Yuki Kawakami</p>
+    </div>
 
     <header id="header" class="header"><!-- ヘッダー挿入 --></header>
 
@@ -42,11 +49,6 @@
         <section class="workHero">
             <div class="workHero__inner">
 
-                <nav class="workBread" aria-label="breadcrumb">
-                    <a href="../index.html#works" class="workBread__link">
-                        <i class="fa-solid fa-arrow-left"></i> WORKSへ戻る
-                    </a>
-                </nav>
                 <!-- 前後ナビ -->
                 <div class="workPager">
                     <a class="workPager__btn" href="./spring-boot-system.html">
@@ -65,7 +67,7 @@
 
 
                         <!-- メイン画像 -->
-                        <img id="workHeroMain" src="../img/works-02.png" alt="作品サムネイル">
+                        <img id="workHeroMain" src="../img/works/cytech.png" alt="【CyTechプログラミング学習アプリ】てっくん">
 
                         <!-- 下：別画像サムネ -->
                         <div class="workHeroThumbs">
@@ -83,7 +85,7 @@
                     <!-- 右：概要 -->
                     <div class="workHero__info">
 
-                        <p class="workKicker">オーディション作品</p>
+                        <p class="workKicker m">オーディション作品</p>
                         <!-- タイトル差し替え -->
                         <h1 class="workTitle">【CyTechプログラミング学習アプリ】てっくん</h1>
                         <p class="workSub">
