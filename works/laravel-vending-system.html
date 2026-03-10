@@ -34,12 +34,16 @@
 
 <body class="workPage">
 
-    <div class="mv-select__top">
+    <a class="mv-select__top" href="../index.html">
         <h1 class="mv-select__hero">Portfolio
             <img src="../img/icon.png">
         </h1>
         <p class="mv-select__by">by Yuki Kawakami</p>
-    </div>
+    </a>
+
+    <a class="back-btn" href="../index.html#works">
+        <img src="../img/works/back-btn.png" alt="WORKSへ戻る">
+    </a>
 
     <header id="header" class="header"><!-- ヘッダー挿入 --></header>
 
@@ -54,20 +58,6 @@
                 <nav class="workBread" aria-label="breadcrumb">
 
                 </nav>
-                <!-- 前後ナビ -->
-                <div class="workPager">
-                    <a class="workPager__btn" href="./portfolio-site.html">
-                        <i class="fa-solid fa-arrow-left"></i> PREV
-                    </a>
-                    <a class="workPager__btn" href="../index.html#works">
-                        <i class="fa-solid fa-table-cells-large"></i> 一覧へ
-
-                    </a>
-                    <a class="workPager__btn" href="./spring-boot-system.html">
-                        NEXT <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-
 
                 <div class="workHero__grid">
                     <!-- 左：サムネ -->
@@ -75,16 +65,8 @@
 
 
                         <!-- メイン画像 -->
-                        <img id="workHeroMain" src="../img/works-02.png" alt="Laravel 自動販売機売上管理システム">
+                        <img id="workHeroMain" src="../img/works/laravel.png" alt="Laravel 自動販売機売上管理システム">
 
-                        <!-- 下：別画像サムネ -->
-                        <div class="workHeroThumbs">
-                            <button class="workHero-arrow" type="button" data-dir="-1" aria-label="prev">‹</button>
-
-                            <div class="workHeroThumbs__list" id="workHeroThumbList"></div>
-
-                            <button class="workHero-arrow" type="button" data-dir="1" aria-label="next">›</button>
-                        </div>
 
                     </div>
 
@@ -94,7 +76,7 @@
                     <div class="workHero__info">
 
                         <p class="workKicker m">個人制作</p>
-                        <!-- タイトル差し替え -->
+                        <!-- タイトル -->
                         <h1 class="workTitle">laravel-vending-system</h1>
                         <p class="workSub">
                             商品登録・検索・ページネーション機能を実装した管理システム
@@ -116,7 +98,7 @@
                                     <dd>
                                         <a class="workLink" href="https://github.com/snow624/vending-system"
                                             target="_blank" rel="noopener" target="_blank" rel="noopener">
-                                            <i class="fa-brands fa-github"></i> リポジトリ
+                                            <i class="fa-brands fa-github"></i> snow624/vending-system
                                         </a>
                                     </dd>
                                 </div>
@@ -125,7 +107,7 @@
                             <!-- CTA -->
                             <div class="workCtas">
                                 <a class="workBtn workBtn--sub" href="../index.html#contact">
-                                    <i class="fa-regular fa-envelope"></i> 相談する
+                                    <i class="fa-regular fa-envelope"></i> お問い合わせ
                                 </a>
                             </div>
 
@@ -209,20 +191,24 @@
                 </div>
 
 
-                <!-- 前後ナビ -->
-                <div class="workPager">
-                    <a class="workPager__btn" href="./portfolio-site.html">
-                        <i class="fa-solid fa-arrow-left"></i> PREV
-                    </a>
-                    <a class="workPager__btn" href="../index.html#works">
-                        <i class="fa-solid fa-table-cells-large"></i> 一覧へ
-                    </a>
-                    <a class="workPager__btn" href="./spring-boot-system.html">
-                        NEXT <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
 
             </div>
+
+            <section class="curved workH2-title">
+                <h2>SCREENSHOTS</h2>
+            </section>
+            <div class="screenshot">
+                <div class="complete-img comp-grid">
+                    <img src="../img/works/laravel-01.png">
+                    <img src="../img/works/laravel-02.png">
+                    <img src="../img/works/laravel-03.png">
+                    <img src="../img/works/laravel-04.png">
+                    <img src="../img/works/laravel-05.png">
+                </div>
+            </div>
+
+
+
         </section>
 
     </main>

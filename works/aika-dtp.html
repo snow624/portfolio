@@ -34,12 +34,16 @@
 
 <body class="workPage">
 
-    <div class="mv-select__top">
+    <a class="mv-select__top" href="../index.html">
         <h1 class="mv-select__hero">Portfolio
             <img src="../img/icon.png">
         </h1>
         <p class="mv-select__by">by Yuki Kawakami</p>
-    </div>
+    </a>
+
+    <a class="back-btn" href="../index.html#works">
+        <img src="../img/works/back-btn.png" alt="WORKSへ戻る">
+    </a>
 
 
     <header id="header" class="header"><!-- ヘッダー挿入 --></header>
@@ -50,33 +54,13 @@
         <section class="workHero">
             <div class="workHero__inner">
 
-                <!-- 前後ナビ -->
-                <div class="workPager">
-                    <a class="workPager__btn" href="./cytech-character-design.html">
-                        <i class="fa-solid fa-arrow-left"></i> PREV
-                    </a>
-                    <a class="workPager__btn" href="../index.html#works">
-                        <i class="fa-solid fa-table-cells-large"></i> 一覧へ
-                    </a>
-                    <a class="workPager__btn" href="./line-stamp.html">
-                        NEXT <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
+
                 <div class="workHero__grid">
                     <!-- 左：サムネ -->
                     <div class="workHero__shot">
 
                         <!-- メイン画像 -->
                         <img id="workHeroMain" src="../img/works/amg.png" alt="アメジストライフ株式会社">
-
-                        <!-- 下：別画像サムネ -->
-                        <div class="workHeroThumbs">
-                            <button class="workHero-arrow" type="button" data-dir="-1" aria-label="prev">‹</button>
-
-                            <div class="workHeroThumbs__list" id="workHeroThumbList"></div>
-
-                            <button class="workHero-arrow" type="button" data-dir="1" aria-label="next">›</button>
-                        </div>
 
                     </div>
 
@@ -87,7 +71,7 @@
 
                         <p class="workKicker c">クライアントワーク</p>
                         <p class="workKicker">アメジストライフ株式会社</p>
-                        <!-- タイトル差し替え -->
+                        <!-- タイトル -->
                         <h1 class="workTitle">DTPデザイン制作</h1>
                         <p class="workSub">
                             企業イメージを意識した名刺・パンフレットデザイン制作
@@ -176,36 +160,19 @@
                     </div>
                 </div>
 
-                <div class="workCard2">
-                    <h2 class="workH2">SCREENSHOTS</h2>
-                    <button class="shot" type="button" data-img="../img/works/sample.png" aria-label="screenshot 1">
-                        <img src="../img/works/amg-01.JPG" alt="">
-                    </button>
-                    <button class="shot" type="button" data-img="../img/works/sample2.png" aria-label="screenshot 2">
-                        <img src="../img/works/amg-02.JPG" alt="">
-                    </button>
-                    <button class="shot" type="button" data-img="../img/works/sample.png" aria-label="screenshot 1">
-                        <img src="../img/works/amg-03.JPG" alt="">
-                    </button>
-                    <button class="shot" type="button" data-img="../img/works/sample2.png" aria-label="screenshot 2">
-                        <img src="../img/works/amg.png" alt="">
-                    </button>
-                </div>
-
-                <!-- 前後ナビ -->
-                <div class="workPager">
-                    <a class="workPager__btn" href="./cytech-character-design.html">
-                        <i class="fa-solid fa-arrow-left"></i> PREV
-                    </a>
-                    <a class="workPager__btn" href="../index.html#works">
-                        <i class="fa-solid fa-table-cells-large"></i> 一覧へ
-                    </a>
-                    <a class="workPager__btn" href="./line-stamp.html">
-                        NEXT <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-
             </div>
+            <section class="curved workH2-title">
+                <h2>SCREENSHOTS</h2>
+            </section>
+            <div class="screenshot">
+                <div class="complete-img comp-grid">
+                    <img src="../img/works/amg.png">
+                    <img src="../img/works/amg-01.JPG">
+                    <img src="../img/works/amg-02.JPG">
+                    <img src="../img/works/amg-03.JPG">
+                </div>
+            </div>
+        </section>
         </section>
 
     </main>

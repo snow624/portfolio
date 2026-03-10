@@ -420,6 +420,12 @@ section {
 .mv-select__top img {
     width: 64px;
     height: 64px;
+    transition: .3s;
+}
+
+.mv-select__top img:hover {
+    transform: 0.3s;
+    scale: 1.1;
 }
 
 .mv-select__logo {
@@ -1120,9 +1126,28 @@ section {
 /* =========================
    WORK DETAIL (File)
 ========================= */
+.back-btn {
+    position: fixed;
+    z-index: 9999;
+    bottom: 20px;
+    left: 20px;
+    display: inline-block;
+    transition: transform .5s ease-in-out;
+}
+
+.back-btn:hover {
+    transform: rotate(15deg);
+}
+
+.back-btn img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
 
 .workHero {
-    background: var(--color-yellow);
+    background: var(--color-card);
     padding: 90px 16px 40px;
 }
 
@@ -1134,8 +1159,8 @@ section {
 
 .workHero__grid {
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1.8fr 1fr;
+    gap: 10px;
     align-items: center;
     margin-top: 20px;
     /* background-color: var(--color-bg); */
@@ -1144,13 +1169,13 @@ section {
 
 .workHero__shot {
     position: relative;
-
     border-radius: 22px;
     /* background: rgba(255, 255, 255, 0.7); */
     padding: 14px;
     overflow: hidden;
 }
 
+/* メイン画像 */
 .workHero__shot img {
     width: 100%;
     height: 400px;
@@ -1159,13 +1184,14 @@ section {
     object-fit: contain;
 }
 
-/* メイン画像 */
+
 #workHeroMain {
     width: 100%;
     display: block;
     border-radius: var(--radius);
-    border: 4px solid var(--color-text);
-    background-color: var(--color-bg);
+    /* border: 4px solid var(--color-text); */
+    /* background-color: var(--color-bg); */
+    object-fit: cover;
 }
 
 .workBadge2 {
@@ -1206,7 +1232,7 @@ section {
     height: 44px;
     border-radius: 14px;
     border: 4px solid var(--color-text);
-    background: rgba(255, 255, 255, .75);
+    /* background: rgba(255, 255, 255, .75); */
     cursor: pointer;
     font-size: 26px;
     line-height: 1;
@@ -1256,14 +1282,13 @@ section {
 
 .workHero__info {
     /* border: 4px solid var(--color-text); */
-    border-radius: var(--radius);
-    background: var(--color-bg);
+    /* border-radius: var(--radius); */
+    /* background: var(--color-bg); */
     padding: var(--space-6);
 }
 
 .workKicker {
     margin: 0;
-    letter-spacing: .14em;
     color: var(--color-text-sub);
     text-align: left;
     font-size: .85rem;
@@ -1271,21 +1296,21 @@ section {
 
 .workKicker.c {
     font-size: .85rem;
-    color: var(--color-bg);
+    color: var(--color-text);
     background: var(--color-main);
-    border: 3px solid var(--color-text);
+    /* border: 3px solid var(--color-text); */
     padding: 4px;
     border-radius: 999px;
     margin-bottom: 10px;
-    max-width: 180px;
+    max-width: 150px;
     text-align: center;
 }
 
 .workKicker.m {
     font-size: .85rem;
-    color: var(--color-text-sub);
+    color: var(--color-text);
     background: var(--color-yellow);
-    border: 3px solid var(--color-text);
+    /* border: 3px solid var(--color-text); */
     padding: 4px;
     border-radius: 999px;
     margin-bottom: 10px;
@@ -1305,6 +1330,7 @@ section {
     text-align: left;
     color: var(--color-text-sub);
     line-height: 1.6;
+    font-size: .95rem;
 }
 
 .workMeta {
@@ -1319,8 +1345,8 @@ section {
 
 .workMeta__row {
     display: grid;
-    grid-template-columns: 80px 1fr;
-    gap: 12px;
+    grid-template-columns: 60px 1fr;
+    gap: 4px;
     align-items: start;
     text-align: left;
 }
@@ -1345,10 +1371,11 @@ section {
     background: var(--color-yellow);
 }
 
+/* CTA */
 .workCtas {
     margin-top: 14px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 10px;
 }
 
@@ -1359,11 +1386,12 @@ section {
     gap: 8px;
     padding: 12px 14px;
     border-radius: 14px;
-    border: 4px solid var(--color-text);
+    /* border: 4px solid var(--color-text); */
     text-decoration: none;
     font-weight: 900;
 }
 
+/* サイトを見る */
 .workBtn--main {
     background: var(--color-main);
     color: var(--color-bg);
@@ -1373,18 +1401,19 @@ section {
     background: var(--color-purple);
 }
 
+/* お問い合わせ */
 .workBtn--sub {
-    background: var(--color-card);
+    background: var(--color-yellow);
     color: var(--color-text);
 }
 
 .workBtn--sub:hover {
-    background: var(--color-yellow);
+    background: var(--color-purple);
 }
 
 /* Body */
 .workBody {
-    background: var(--color-yellow);
+    background: var(--color-card);
     padding: 40px 16px 90px;
 }
 
@@ -1398,7 +1427,7 @@ section {
 .workCard2 {
     /* border: 4px solid var(--color-text); */
     border-radius: 22px;
-    background: var(--color-card);
+    /* background: var(--color-card); */
     padding: 18px;
 }
 
@@ -1544,7 +1573,51 @@ section {
     background: var(--color-yellow);
 }
 
+/* 完成図 */
+.complete-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
 
+.complete-img.comp-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.workH2-title h2 {
+    font-size: 2rem;
+    z-index: 999;
+    position: absolute;
+    padding: 10px 0;
+    bottom: 20px;
+    transform: translateX(-50%);
+    left: 50%;
+    border-bottom: 4px solid var(--color-card);
+}
+
+.screenshot {
+    background-color: var(--color-main);
+    padding: 40px;
+    margin-bottom: -100px;
+}
+
+.curved {
+    position: relative;
+    background: var(--color-card);
+    height: 20vh;
+}
+
+.curved::after {
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--color-main);
+    height: 75%;
+}
 
 @media (max-width: 900px) {
     .workHero__grid {
@@ -1560,6 +1633,19 @@ section {
     }
 
     .workCtas {
+        grid-template-columns: 1fr;
+    }
+
+    .workHero__shot img {
+        margin: -23px 0;
+    }
+
+    /* 完成図 */
+    .complete-img {
+        grid-template-columns: 1fr;
+    }
+
+    .complete-img.comp-grid {
         grid-template-columns: 1fr;
     }
 }

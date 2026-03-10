@@ -47,10 +47,17 @@ function fixHeaderPaths(base, isWorksPage) {
     });
 
     // footerも同様
+    // footer内の #リンク を index.html#〜 に変換
     footer.querySelectorAll('a[href^="#"]').forEach((a) => {
         a.href = base + "index.html" + a.getAttribute("href");
     });
 
+    // footer内の index.html を ../index.html に変換
+    footer.querySelectorAll('a[href="index.html"]').forEach((a) => {
+        a.href = base + "index.html";
+    });
+
+    // footer内の img/ を ../img/ に
     footer.querySelectorAll('img[src^="img/"]').forEach((img) => {
         img.src = base + img.getAttribute("src");
     });
@@ -322,7 +329,7 @@ function initWorkHeroGallery() {
     const list = document.getElementById("workHeroThumbList");
     if (!main || !list) return;
 
-    // どの作品ページか判定（file02.html など）
+    // どの作品ページか判定
     const page = location.pathname.split("/").pop();
 
     // ★ページごとに「別画像」を定義
@@ -340,6 +347,7 @@ function initWorkHeroGallery() {
             "../img/works/file02-03.png",
         ],
         "portfolio-site.html": [
+            "../img/works/works-01.png",
             "../img/works/portfolio.png",
             "../img/works/portfolio-01.png",
             "../img/works/portfolio-02.png",
